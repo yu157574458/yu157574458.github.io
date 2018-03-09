@@ -7,4 +7,4 @@ tags: [random, jekyll]
 redirect_from:
   - /2013/04/22/
 ---
-Hello World! This is the beginning of this theme.
+我的博客第一篇：Hello World! 
