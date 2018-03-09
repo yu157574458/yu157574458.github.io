@@ -1,6 +1,6 @@
 # yuqc.github.io
 
-#screenshots
+# screenshots
 
 ![Screenshot - Home](assets/images/screenshots/home.png)
 
