@@ -24,18 +24,18 @@ sass:
 url: # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: # the subpath of your site, e.g. /blog
 title: yuqc
-description: "欲成大树、勿与草争，欲戴皇冠、必承其重"
+description: "One who wants to wear the crown. Bears the crown."
 keywords: 'yuqc,jekyll,theme,gem-based,blog'
 author:
-  name:
-  job_title:
-  location:
+  name: yuqichao
+  job_title: Software Engineer
+  location: beijing
   email: yuqichaoforwork@foxmail.com
   social_links:
     - name: facebook
       url:
     - name: github
-      url: https://github.com/yizeng/jekyll-theme-simple-texture
+      url: https://github.com/yuqc/yuqc.github.io
     - name: instagram
       url:
     - name: linkedin
@@ -48,7 +48,7 @@ author:
       url:
 home:
   section1: <h2>yuqc</h2>
-  section2: <h2>欲成大树、勿与草争，欲戴皇冠、必承其重</h2>
+  section2: <h2>One who wants to wear the crown. Bears the crown.</h2>
   section3: <div class="social-links"><a class="ico-github btn" href="https://github.com/yuqc/yuqc.github.io" title="View on GitHub"></a></div>
 blog:
   cc_license: http://creativecommons.org/licenses/by-sa/4.0/ # A link to CC License of your choice.
