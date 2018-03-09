@@ -27,7 +27,7 @@ en: &en
   tags: 'Tags'
   theme_info: '<p><small>Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and <a href="https://pages.github.com/" target="_blank">Github Pages,</a>, © 2018 Bryce.</small></p>'
   view: 'View'
-  welcome: 'Welcome to visit'
+  welcome: 'Welcome to my blog'
 en-us:
   <<: *en
 en-gb:
@@ -68,7 +68,7 @@ zh: &zh
   tags: '文章标签'
   theme_info: '<p><small>Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and <a href="https://pages.github.com/" target="_blank">Github Pages,</a>, © 2018 Bryce.</small></p>'
   view: '查阅'
-  welcome: '欢迎访问'
+  welcome: '欢迎访问我的博客'
 zh-cn:
   <<: *zh
 zh-hk:
