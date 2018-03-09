@@ -31,7 +31,7 @@ author:
   job_title: Software Engineer
   location: beijing
   email: yuqichaoforwork@foxmail.com
-  avatar: assets/images/screenshots/avatar.png
+  avatar: /assets/images/screenshots/avatar.png
   social_links:
     - name: facebook
       url:
