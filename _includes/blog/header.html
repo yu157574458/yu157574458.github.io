@@ -10,7 +10,14 @@
 							 <div id="avatar"><img src="{{ site.author.avatar }}" alt="avatar" "></div>
 						</div>
 						{% endif %}
-						<div id="welcome"><a href="{{ site.paths.blog | relative_url }}">{{ site.title }}</a> {{ site.data.i18n[site.lang].welcome }}</div>
+						<div id="welcome">
+						    <ul>
+						      <li><a href="{{ site.paths.blog | relative_url }}">{{ site.title }}</a></li>
+						    </ul>
+						   	<ul>
+						      <li>{{ site.data.i18n[site.lang].welcome }}</li>
+						    </ul>
+						</div>
                         <!--[if !IE]> -->
                         <button class="btn-search" title="{{ site.data.i18n[site.lang].search }}"></button>
                         <!-- <![endif]-->
