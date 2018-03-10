@@ -5,11 +5,12 @@
                 <ul>
                     <li class="logo nav-link">
                         <button class="btn-menu" title="{{ site.data.i18n[site.lang].menu }}"></button>
+						<div class="imgtest">
 						{% if site.author.avatar %}
-						<div class="imgtest"><figure><div><img src="{{ site.author.avatar }}" alt="avatar" "></div></figure></imgtest>
+						     <figure><div><img src="{{ site.author.avatar }}" alt="avatar" "></div></figure>
 						{% endif %}
-						<a href="{{ site.paths.blog | relative_url }}">{{ site.title }}</a>
-                        {{ site.data.i18n[site.lang].welcome }}
+						     <a href="{{ site.paths.blog | relative_url }}">{{ site.title }}</a> {{ site.data.i18n[site.lang].welcome }}
+						</div>
                         <!--[if !IE]> -->
                         <button class="btn-search" title="{{ site.data.i18n[site.lang].search }}"></button>
                         <!-- <![endif]-->
