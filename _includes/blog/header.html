@@ -5,9 +5,9 @@
                 <ul>
                     <li class="logo nav-link">
                         <button class="btn-menu" title="{{ site.data.i18n[site.lang].menu }}"></button>
-                        {{ site.data.i18n[site.lang].welcome }}
+                        {{ site.data.i18n[site.lang].welcome }}<a href="{{ site.paths.blog | relative_url }}">{{ site.title }}</a>
 						{% if site.author.avatar %}
-						<div class="imgtest"><figure><div><a href="{{ site.paths.blog | relative_url }}">{{ site.title }}</a><a href="{{ site.paths.blog | relative_url }}"><img src="{{ site.author.avatar }}" alt="avatar" "></a></div></figure></imgtest>
+						<div class="imgtest"><figure><div><a href="{{ site.paths.blog | relative_url }}"><img src="{{ site.author.avatar }}" alt="avatar" "></a></div></figure></imgtest>
 						{% endif %}
                         <!--[if !IE]> -->
                         <button class="btn-search" title="{{ site.data.i18n[site.lang].search }}"></button>
