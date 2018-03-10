@@ -47,11 +47,13 @@
 
                 background: url('../images/theme/btn-search.png') no-repeat;
             }
+			
 			.imgtest{
 			    display:inline-block;
                 overflow:hidden;
 			}
-			.imgtest figure div{
+			
+			.imgtest #avatar{
                 display:inline-block;
                 width:100px;
                 height:100px;
@@ -61,6 +63,11 @@
                 -webkit-box-shadow:0 0 3px #ccc;
                 box-shadow:0 0 3px #ccc;
              }
+			 
+			 .imgtest #welcome{
+                display:inline-block;
+             }
+			 
 			.imgtest img{
 			    width:100%;
                 min-height:100%; 
