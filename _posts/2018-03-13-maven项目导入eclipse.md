@@ -9,14 +9,14 @@ redirect_from:
 ---
 > 简介：开发过程中需要eclipse从SVN检出maven web项目
 
-##从svn导入需要注意点
+## 从svn导入需要注意点
 从svn检出了项目之后并不是maven的基本格式，需要自己修改过才行
 >* 第一步，从svn检出项目，作为新项目检出
 >* 第二步，新项目要选Dynamic Web Project
 >* 第三步，转成maven项目
 >* 第四步，修改pom.xml,主要是保证JDK一致
 
-##Maven知识
+## Maven知识
 
 Maven是基于项目对象模型(POM)，可以通过一小段描述信息来管理项目的构建，报告和文档的软件项目管理工具。
 Maven是跨平台的项目管理工具。主要服务于基于Java平台的项目构建，依赖管理和项目信息管理。
@@ -48,11 +48,11 @@ settings.xml存在于两个地方：
 所以为了方便，需要自己创建.m2文件夹，并在其中配置settings.xml
 
 网上的教程就是使用命令
-    mvn help:system
+    `mvn help:system`
 
 使用之后，发现并没有生成.m2文件夹
 
 查找很多之后发现，必须把默认的maven里面的本地存储设置为默认的，就是不要设置
-    <localRepository>D:\maven\repository</localRepository>
+    `<localRepository>D:\maven\repository</localRepository>`
 
 这一行注释或取消掉，再执行mvn help:system命令就OK了。
