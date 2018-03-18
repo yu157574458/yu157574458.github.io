@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Quick kramdown demo"
+title: "kramdown语法例子"
 description: "A quick demo post to some kramdown features."
-categories: [demo]
-tags: [demo, jekyll]
+categories: [java工具]
+tags: [markdown,jekyll]
 redirect_from:
   - /2017/05/25/
 ---

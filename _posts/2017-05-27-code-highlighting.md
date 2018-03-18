@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "A quick demo of Simple Texture theme's code highlighting features"
-description: "A quick demo of Simple Texture theme's code highlighting features"
-categories: [demo]
-tags: [demo, jekyll]
+title: "快速学习md格式下的code样式"
+description: "A quick demo of yuqc's code highlighting features"
+categories: [java工具]
+tags: [markdown,jekyll]
 redirect_from:
   - /2017/05/27/
 ---
