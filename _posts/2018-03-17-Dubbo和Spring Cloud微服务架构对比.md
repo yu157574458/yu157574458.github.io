@@ -32,7 +32,7 @@ Dubbo 核心部件（如下图）:
 
 - Container：服务运行的容器。
 
-![dubbo](..\assets\images\logimages\20180318\20180318dubbo.png)
+![dubbo](assets\images\logimages\20180318\20180318dubbo.png)
 
 **Spring Cloud**( 是大名鼎鼎的 Spring 家族的产品， 专注于企业级开源框架的研发。)
 
@@ -44,12 +44,12 @@ Spring Cloud总体架构（如下图）：
 
 - EureKa Server： 服务注册中心和服务发现中心
 
-![Spring Cloud](..\assets\images\logimages\20180318\20180318springcloud.png)
+![Spring Cloud](assets\images\logimages\20180318\20180318springcloud.png)
 
 **点评：从整体架构上来看，二者模式接近，都需要服务提供方，注册中心，服务消费方。**
 
 ## 微服务架构核心要素
-![compare](..\assets\images\logimages\20180318\20180318compare.png)
+![compare](assets\images\logimages\20180318\20180318compare.png)
 
 Dubbo 只是实现了服务治理，而 Spring Cloud 子项目分别覆盖了微服务架构下的众多部件，服务治理只是其中的一个方面。
 
@@ -89,7 +89,7 @@ Spring Cloud 使用 HTTP 协议的 REST API。
 ## 性能比较
 使用一个 Pojo 对象包含 10 个属性，请求 10 万次，Dubbo 和 Spring Cloud 在不同的线程数量下，每次请求耗时（ms）如下：
 
-![compare2](..\assets\images\logimages\20180318\20180318compare2.png)
+![compare2](assets\images\logimages\20180318\20180318compare2.png)
 
 说明：客户端和服务端配置均采用阿里云的 ECS 服务器，4 核 8G 配置，Dubbo 采用默认的 Dubbo 协议。
 
@@ -117,7 +117,7 @@ Spring Cloud 使用 HTTP 协议的 REST API。
 
 下图中的每个组件都是需要部署在单独的服务器上，Gateway 用来接受前端请求、聚合服务，并批量调用后台原子服务。每个 Service 层和单独的 DB 交互。
 
-![compare2](..\assets\images\logimages\20180318\dubbocomponentprocedure.png)
+![compare2](assets\images\logimages\20180318\dubbocomponentprocedure.png)
 
 Dubbo 组件运行：
 
@@ -129,7 +129,7 @@ Dubbo 组件运行：
 
 **Spring Cloud**
 
-![compare2](..\assets\images\logimages\20180318\springcloudcomponentprocedure.png)
+![compare2](assets\images\logimages\20180318\springcloudcomponentprocedure.png)
 
 Spring Cloud组件运行：
 
@@ -150,7 +150,7 @@ Spring Cloud组件运行：
 
 下面是一张互联网通用的架构图，其中每个环节都是微服务的核心部分。
 
-![compare2](..\assets\images\logimages\20180318\framework.png)
+![compare2](assets\images\logimages\20180318\framework.png)
 
 **架构分解：**
 
