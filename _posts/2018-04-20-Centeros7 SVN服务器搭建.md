@@ -70,20 +70,20 @@ ps aux|grep svnserve
 停止SVN服务：   
 killall svnserve
 
-第八：访问路径   
+第八：访问路径  
 SVN客户端可直接通过后面地址访问：svn://你的服务器ip/project   
 
 ## 搭建SVN ＋ Apache 服务器
 一般公司访问都是通过http访问，可能是更保密点。  
 上面如果都顺利搭建成功，后面需要加几步，即可实现http访问
 
-1 安装httpd  
+1  安装httpd  
 安装httpd服务：   
 yum install httpd   
 检查httpd是否安装成功：   
 httpd -version
 
-2 安装mod_dav_svn    
+2  安装mod_dav_svn    
 mod_dav_svn是apache服务器访问svn的一个模块。通过yum安装：    
 yum install mod_dav_svn   
 安装成功后，会有mod_dav_svn.so和mod_authz_svn.so两个文件。   
@@ -93,7 +93,7 @@ yum install mod_dav_svn
 >  # find / -name mod_authz_svn.so   
 >  /usr/lib64/httpd/modules/mod_authz_svn.so   
 
-3 授权   
+3  授权   
  修改svn仓库的用户组为apache：    
  chown -R apache:apache /home/svn/project/   
  创建用户文件passwd：    
@@ -105,6 +105,7 @@ yum install mod_dav_svn
     cat /home/svn/passwd 
     admin:$apr1$UCkPzZ2x$tnDk2rgZoiaURPzO2e57t0
     guest:$apr1$vX1RIUq6$OKS1bqKZSptzsPDYUOJ5x.   
+ 
  创建权限文件authz：   
 
     cp /home/svn/spring-hello-world/conf/authz /var/www/svn/authz
@@ -114,12 +115,13 @@ yum install mod_dav_svn
     admin = rw
     guest = r
 
-4 配置httpd
+4  配置httpd
 
-touch /etc/httpd/conf.d/subversion.conf
+touch /etc/httpd/conf.d/subversion.conf   
 
-cat /etc/httpd/conf.d/subversion.conf 
-<Location /svn>
+cat /etc/httpd/conf.d/subversion.conf  
+ 
+    <Location /svn>
     DAV svn
     SVNParentPath /home/svn
 
@@ -128,15 +130,15 @@ cat /etc/httpd/conf.d/subversion.conf
     AuthzSVNAccessFile /home/authz
     AuthUserFile /home/svn/passwd
     Require valid-user
-</Location>
+    </Location>
 
-5 启动httpd服务  
+5  启动httpd服务   
 systemctl start httpd.service
 
-6 访问路径   
+6  访问路径   
 http://你的服务器ip/svn/project
 
-##SVN服务器常用命令
+## SVN服务器常用命令
 //启动SVN         svnserve -d -r /home/svn/   
 //查看启动端口    netstat -antp |grep svn   或    ps aux|grep svnserve   
 //查看SVN进程    # ps -ef|grep svn|grep -v grep   
@@ -148,7 +150,7 @@ http://你的服务器ip/svn/project
 // 启动httpd服务     systemctl start httpd.service   
 // 重启httpd服务     systemctl restart httpd.service     
 
-##注意事项
+## 注意事项
 - 修改配置文件时，前面不要留空格   
 - 阿里云需要在安全组添加端口   
 - 返回403错误，可能是防火墙问题。增加防火墙规则  
