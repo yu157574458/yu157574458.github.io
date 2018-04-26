@@ -19,7 +19,7 @@ spring boot使用了默认大于配置的理念，很多集成方案已经帮你
 
 Spring Cloud 组件运行：
 
-![compare2](..\assets\images\logimages\20180318\springcloudcomponentprocedure.png)
+![compare2](..\..\..\..\..\assets\images\logimages\20180318\springcloudcomponentprocedure.png)
 
 ##服务注册与发现
 1. 创建调用关系的微服务
